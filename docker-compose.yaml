@@ -1,0 +1,19 @@
+
+version: '3.9'
+services:
+  streznik:
+    image: php:apache
+    container_name: giganigga
+    ports:
+      - "8080:80"
+    volumes:
+      - /Users/jangustin/Documents/letnik3/Arduino/vaja7:/var/www/html
+
+  streznik_dodatni:
+    image: php:apache
+    container_name: streznik_dodatni
+    ports:
+      - "9000:80"
+    volumes:
+      - /Users/jangustin/Documents/letnik3/Arduino/vaja7/dodatek:/var/www/html
+
